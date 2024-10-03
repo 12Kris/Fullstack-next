@@ -1,0 +1,147 @@
+.header {
+    background-image: url('../../../public/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.logo {
+    width: 8rem;
+    max-width: 100%;
+}
+
+.navbar {
+    position: relative;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--barlow-font);
+}
+
+.navLinksMobile {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 220px;
+    background-color: #fff;
+    right: 0;
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    z-index: 100;
+    margin-top: 13rem;
+}
+
+.navLinksMobile a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--barlow-font);
+}
+
+.navLinksMobile.opened {
+    display: flex;
+}
+
+.burgerIcon {
+    display: none;
+    cursor: pointer;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+.contact {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: var(--contact-text-color);
+    font-family: var(--barlow-font);
+    font-size: 18px;
+    border-style: none;
+    border-radius: 0.6rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact:hover {
+    background-color: rgba(255, 252, 252, 0.365);
+    color: white;
+}
+
+.contactBtn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--contact-button-bg-color);
+    color: var(--contact-text-color);
+    font-family: var(--barlow-font);
+    font-size: 18px;
+    border-style: none;
+    border-radius: 0.6rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-family: var(--fraunces-font);
+    text-align: center;
+    padding: 4rem 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+}
+
+.arrowImg {
+    margin: 0 auto;
+    height: 15%;
+    width: 1.5rem;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.arrowImg.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .burgerIcon {
+        display: block;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+}

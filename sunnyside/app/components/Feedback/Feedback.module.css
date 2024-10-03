@@ -1,0 +1,83 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--container-bg);
+    padding: 3rem;
+}
+
+.testimonials h3 {
+    font-family: var(--fraunces-font);
+    color: var(--section-text-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImage {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+.feedback {
+    font-family: var(--barlow-font);
+    color: var(--feedback-text-color);
+    line-height: 1.8rem;
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.authorBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.profileAuthor {
+    font-family: var(--fraunces-font);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.authorJob {
+    font-family: var(--barlow-font);
+    font-size: 0.8rem;
+    color: var(--section-text-color);
+}
+
+@media (max-width: 768px) {
+    .profiles {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .testimonials {
+        padding: 1rem;
+    }
+}

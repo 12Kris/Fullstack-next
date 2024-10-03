@@ -1,0 +1,45 @@
+.footer {
+    background-color: var(--footer-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 4rem 1.2rem;
+    min-height: 30vh;
+    text-align: center;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 8rem;
+    max-width: 100%;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footerMenu a {
+    color: var(--footer-text-color);
+    font-family: var(--barlow-font);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.socialIcon {
+    width: 24px;
+    height: 24px;
+}
