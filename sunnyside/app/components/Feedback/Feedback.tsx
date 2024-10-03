@@ -24,7 +24,7 @@ function Feedback() {
                 <div className={styles.profile}>
                     <Image src={ThomasPhoto} alt="Thomas S." className={styles.profileImage} />
                     <p className={styles.feedback}>
-                        Sunnyside enthusiasm coupled with their keen interest
+                        Sunnyside  enthusiasm coupled with their keen interest
                         in our success made it a satisfying and enjoyable experience.
                     </p>
                     <div className={styles.authorBlock}>
